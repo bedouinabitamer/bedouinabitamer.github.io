@@ -1,5 +1,5 @@
 // Single source of truth for every piece of copy on the site.
-// Everything here comes from the CV — edit this file, not the components.
+// Everything here comes from the CV. Edit this file, not the components.
 
 import portrait from '../assets/portrait.jpg'
 
@@ -8,7 +8,7 @@ export const profile = {
   initials: 'BA',
   role: 'Full Stack Developer',
   location: 'Jdaideh & Zgharta, Lebanon',
-  available: true,
+  available: false,
   availableLabel: 'Open to opportunities',
   headline: ['Building web', 'and mobile', 'products'],
   intro:
@@ -45,7 +45,7 @@ export const marquee = [
 export const about = {
   title: 'About me',
   paragraphs: [
-    'I started in IT at Institute Saint Antoine, completed my degree in Computer Science and Information Technology at Notre Dame University, and spent my first professional year as a database developer at North Hospital Center (CHN) — writing PL/SQL, developing Oracle Forms, and ensuring data integrity.',
+    'I started in IT at Institute Saint Antoine, completed my degree in Computer Science and Information Technology at Notre Dame University, and spent my first professional year as a database developer at North Hospital Center (CHN), writing PL/SQL, developing Oracle Forms, and ensuring data integrity.',
     'From there, I sharpened my product acumen through an intensive Agile Business Analyst program at Eurisko Academy, provided front-line technical support at TSI, and landed where I wanted to be: building full-stack web and mobile products at Digilab Solutions, from the schema and APIs all the way to cloud deployment.',
   ],
   highlights: [
@@ -55,7 +55,7 @@ export const about = {
     },
     {
       title: "An analyst's eye",
-      body: 'A business-analysis bootcamp put me through backlogs, sprints, user stories and Kibana dashboards — so I can turn a vague business need into a clear functional spec.',
+      body: 'A business-analysis bootcamp put me through backlogs, sprints, user stories and Kibana dashboards, so I can turn a vague business need into a clear functional spec.',
     },
     {
       title: 'Owning the pipeline',
@@ -92,7 +92,7 @@ export const services = [
 ]
 
 // Case studies drawn from real work. Swap in links and screenshots as they
-// become shareable — `link` and `repo` are wired up already.
+// become shareable. `link` and `repo` are wired up already.
 export const projects = [
   {
     id: 1,
@@ -139,7 +139,7 @@ export const projects = [
     category: 'Database Engineering',
     year: '2023',
     description:
-      'Oracle Forms and database layer for North Hospital Center — tables, triggers, sequences and functions in PL/SQL, with queries tuned for daily clinical load.',
+      'Oracle Forms and database layer for North Hospital Center: tables, triggers, sequences and functions in PL/SQL, with queries tuned for daily clinical load.',
     tags: ['Oracle Forms', 'PL/SQL', 'SQL'],
     link: '#',
     repo: '#',
@@ -150,26 +150,26 @@ export const projects = [
 
 export const experience = [
   {
-    period: 'Feb 2026 — Present',
+    period: 'Feb 2026 to Present',
     role: 'Full Stack Developer (Web & Mobile)',
     company: 'Digilab Solutions',
     body: 'Building and maintaining web and mobile applications in React, React Native and Node.js. Designing PostgreSQL and SQL databases for performance and integrity, shipping responsive interfaces and REST APIs, integrating AI-powered features, deploying to AWS, and owning the GitHub repository and CI/CD pipelines.',
   },
   {
-    period: 'Jul 2025 — Jan 2026',
+    period: 'Jul 2025 to Jan 2026',
     role: 'Technical Call Support',
     company: 'TSI (IDM, Cablevision, Cyberia)',
     body: 'Troubleshot Cablevision receivers and Smart Box systems, walked customers through modem and Wi-Fi setup, diagnosed slow speeds, DNS failures and dropped connections, and coordinated with field technicians to close cases.',
   },
   {
-    period: 'Nov 2024 — Jan 2025',
+    period: 'Nov 2024 to Jan 2025',
     role: 'Business Analyst',
     kind: 'Bootcamp',
     company: 'Eurisko Academy, Adma',
     body: 'An intensive business-analysis program: managing product backlogs against Agile sprints, building Kibana dashboards for real-time performance visibility, translating business requirements into functional specifications, and working alongside developers, QA and UI/UX to keep delivery aligned with the user stories.',
   },
   {
-    period: 'Feb 2023 — Feb 2024',
+    period: 'Feb 2023 to Feb 2024',
     role: 'Database Developer',
     company: 'North Hospital Center (CHN), Zgharta',
     body: 'Designed and developed Oracle Forms and database tables including triggers, sequences and functions. Used SQL and PL/SQL to manage and optimise data workflows, ensuring integrity and tuning queries for performance.',
@@ -179,18 +179,18 @@ export const experience = [
 export const education = [
   {
     period: 'Graduated Fall 2024',
-    title: 'BSc Computer Science — Information Technology',
+    title: 'BSc Computer Science, Information Technology',
     place: 'Notre Dame University (NDU)',
   },
   {
-    period: '2018 — 2021',
+    period: '2018 to 2021',
     title: 'Technical Education, Information Technology',
     place: 'Institute Saint Antoine (ISA), North Lebanon',
   },
 ]
 
 export const certificates = [
-  { year: '2021—2024', title: 'Member, Google Developer Student Club (GDSC)', place: 'NDU' },
+  { year: '2021 to 2024', title: 'Member, Google Developer Student Club (GDSC)', place: 'NDU' },
   { year: '2022', title: 'SQL, Database Schema & Database Design', place: 'Udemy' },
   { year: '2019', title: 'First Aid Certificate', place: 'Lebanese Red Cross' },
 ]
@@ -228,7 +228,7 @@ export const socials = [
 
 export const contact = {
   title: ['Have a project', 'in mind?'],
-  lead: 'Always open to interesting work and good conversations — web, mobile or anything with a database underneath it. Send me a note and I will get back to you.',
+  lead: 'Always open to interesting work and good conversations: web, mobile or anything with a database underneath it. Send me a note and I will get back to you.',
 }
 
 export const nav = [

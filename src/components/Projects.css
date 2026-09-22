@@ -50,7 +50,7 @@
   transform: scale(1.08);
 }
 
-/* placeholder mark — swap the whole thumb for an <img> when shots exist */
+/* placeholder mark: swap the whole thumb for an <img> when shots exist */
 .project__glyph {
   position: relative;
   font-size: clamp(3.5rem, 9vw, 6rem);
