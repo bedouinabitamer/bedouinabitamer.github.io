@@ -1,0 +1,152 @@
+.contact {
+  position: relative;
+  padding-block: clamp(90px, 13vw, 170px) 36px;
+  border-top: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.contact__glow {
+  position: absolute;
+  bottom: -55%;
+  left: 50%;
+  width: min(1000px, 130vw);
+  aspect-ratio: 1;
+  transform: translateX(-50%);
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--accent) 14%, transparent) 0%,
+    transparent 60%
+  );
+  filter: blur(30px);
+  pointer-events: none;
+}
+
+.contact__inner {
+  position: relative;
+}
+
+.contact__title {
+  font-size: clamp(2.6rem, 8.5vw, 6.5rem);
+  margin-bottom: 28px;
+}
+
+.contact__lead {
+  color: var(--text-muted);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  max-width: 46ch;
+  margin-bottom: clamp(44px, 6vw, 72px);
+}
+
+/* ── Big mailto link ───────────────────────────────────────────── */
+.contact__mail {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(12px, 2vw, 24px);
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line-strong);
+  font-size: clamp(1.1rem, 3.4vw, 2.4rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  word-break: break-all;
+  transition: border-color 0.45s var(--ease), color 0.45s var(--ease);
+}
+
+.contact__mail:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.contact__mailArrow {
+  flex: none;
+  transition: transform 0.45s var(--ease);
+}
+
+.contact__mail:hover .contact__mailArrow {
+  transform: translate(5px, -5px);
+}
+
+.contact__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(24px, 5vw, 64px);
+  margin-top: 36px;
+}
+
+.contact__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  transition: color 0.35s var(--ease);
+}
+
+a.contact__detail:hover {
+  color: var(--accent);
+}
+
+.contact__detailLabel {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* ── Footer row ────────────────────────────────────────────────── */
+.contact__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: clamp(70px, 11vw, 140px);
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+}
+
+.contact__socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.contact__socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  transition: color 0.3s var(--ease);
+}
+
+.contact__socials a:hover {
+  color: var(--accent);
+}
+
+.contact__copy,
+.contact__top {
+  font-size: 0.82rem;
+  color: var(--text-faint);
+}
+
+.contact__top {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s var(--ease);
+}
+
+.contact__top:hover {
+  color: var(--text);
+}
+
+@media (max-width: 700px) {
+  .contact__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
